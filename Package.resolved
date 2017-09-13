@@ -77,8 +77,8 @@
         "package": "PointFree",
         "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
         "state": {
-          "branch": "3188a93",
-          "revision": "3188a93c31f72165a9ca46e98163d81850da9ca7",
+          "branch": "fe09eae",
+          "revision": "fe09eae49835b603ee8083bdfdcee45b3fed81b0",
           "version": null
         }
       },
