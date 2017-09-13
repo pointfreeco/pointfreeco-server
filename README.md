@@ -1,9 +1,12 @@
-# pointfree.co
+# Point-Free Server
 
-Some useful commands:
+This repo contains the imperative shell of [www.pointfree.co](https://www.pointfree.co). It consists of a basic server for running the functional core of [Point-Free](https://www.github.com/pointfreeco/pointfreeco), which contains the pages and logic for the site.
 
-``` sh
-docker build -t pointfreeco ./
-docker exec -it pointfreeco_db_1 -U postgres -d pointfree
-heroku container:push web -a pointfreeco
-```
+### Run locally
+
+* `git clone https://github.com/pointfreeco/pointfreeco-server.git`
+* `cd pointfreeco-server`
+* `swift package generate-xcodeproj`
+* `xed .`
+* Run cmd+R
+* Open `http://0.0.0.0:8080` in your browser.
