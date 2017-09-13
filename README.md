@@ -1,9 +1,12 @@
-# pointfree.co
+# Point-Free server
 
-Some useful commands:
+This repo contains the server that runs the [www.pointfree.co](https://www.pointfree.co) website, whose source can be found in the [Point-Free repo](https://www.github.com/pointfreeco/pointfreeco). This low-level server is run by [Kitura](http://kitura.io), which delegates the entire request-to-response lifecycle to the application code in Point-Free.
 
-``` sh
-docker build -t pointfreeco ./
-docker exec -it pointfreeco_db_1 -U postgres -d pointfree
-heroku container:push web -a pointfreeco
-```
+## Run locally
+
+* `git clone https://github.com/pointfreeco/pointfreeco-server.git`
+* `cd pointfreeco-server`
+* `swift package generate-xcodeproj`
+* `xed .`
+* Run cmd+R
+* Open `http://0.0.0.0:8080` in your browser.
