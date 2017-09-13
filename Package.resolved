@@ -1,0 +1,151 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Algebra",
+        "repositoryURL": "https://github.com/typelift/Algebra.git",
+        "state": {
+          "branch": null,
+          "revision": "e81a20aa543dd0847897b57073a3f939c2124375",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "CCurl",
+        "repositoryURL": "https://github.com/IBM-Swift/CCurl.git",
+        "state": {
+          "branch": null,
+          "revision": "f481bd86e58787824cc1c1ec1786e03b67831f38",
+          "version": "0.4.1"
+        }
+      },
+      {
+        "package": "DoctorPretty",
+        "repositoryURL": "https://github.com/bkase/DoctorPretty.git",
+        "state": {
+          "branch": null,
+          "revision": "2d0370ade8098dd1e24c08460edc1606eb81a54f",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "Kitura",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura.git",
+        "state": {
+          "branch": null,
+          "revision": "084bf1917d5d4d2ac56dbc71f393d916ceb771bd",
+          "version": "1.7.8"
+        }
+      },
+      {
+        "package": "Kitura-TemplateEngine",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-TemplateEngine.git",
+        "state": {
+          "branch": null,
+          "revision": "8e75a213bf4dd7b5effd03848335e344535969aa",
+          "version": "1.7.2"
+        }
+      },
+      {
+        "package": "Kitura-net",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-net.git",
+        "state": {
+          "branch": null,
+          "revision": "b5c3b26321964978abb3b03230684a347a00a4b7",
+          "version": "1.7.15"
+        }
+      },
+      {
+        "package": "LoggerAPI",
+        "repositoryURL": "https://github.com/IBM-Swift/LoggerAPI.git",
+        "state": {
+          "branch": null,
+          "revision": "6b62fe66da9b8794d6581e5c341710eea3173cd4",
+          "version": "1.7.1"
+        }
+      },
+      {
+        "package": "Operadics",
+        "repositoryURL": "https://github.com/typelift/Operadics.git",
+        "state": {
+          "branch": null,
+          "revision": "bc8cdd83868c395b7075d0db5e930842172012ec",
+          "version": "0.2.3"
+        }
+      },
+      {
+        "package": "PointFree",
+        "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
+        "state": {
+          "branch": "3188a93",
+          "revision": "3188a93c31f72165a9ca46e98163d81850da9ca7",
+          "version": null
+        }
+      },
+      {
+        "package": "Prelude",
+        "repositoryURL": "https://github.com/pointfreeco/swift-prelude.git",
+        "state": {
+          "branch": "aab186e",
+          "revision": "aab186e757d88efbca2f17939dd7b94731744852",
+          "version": null
+        }
+      },
+      {
+        "package": "SSLService",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
+        "state": {
+          "branch": null,
+          "revision": "f8fcf640c27ac5c55492ecca5dc3954890eefead",
+          "version": "0.12.52"
+        }
+      },
+      {
+        "package": "SnapshotTesting",
+        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
+        "state": {
+          "branch": "6a292e9",
+          "revision": "6a292e9fe1d994207f1bf47fefdb78ca44951a09",
+          "version": null
+        }
+      },
+      {
+        "package": "Socket",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
+        "state": {
+          "branch": null,
+          "revision": "4cf5f77c81330d663e2947a058a9fa58109ca17f",
+          "version": "0.12.65"
+        }
+      },
+      {
+        "package": "Swiftx",
+        "repositoryURL": "https://github.com/typelift/Swiftx.git",
+        "state": {
+          "branch": null,
+          "revision": "32cb9a833cbc69b1ee2ebad2392eca3090b7211c",
+          "version": "0.5.3"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/IBM-Swift/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "1190845cf7d25a5c8ea7653fe03dcdd39a082056",
+          "version": "16.0.2"
+        }
+      },
+      {
+        "package": "Web",
+        "repositoryURL": "https://github.com/pointfreeco/swift-web.git",
+        "state": {
+          "branch": "ec0dcab",
+          "revision": "ec0dcab4f0ff8de47567b9c2d481dd2b63a3dc79",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
