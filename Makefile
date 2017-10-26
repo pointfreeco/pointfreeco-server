@@ -4,5 +4,8 @@ start:
 clean:
 	rm -fr .build
 
-deploy:
+production:
 	heroku container:push web -a pointfreeco
+
+staging:
+	heroku container:push web -a pointfreeco-staging

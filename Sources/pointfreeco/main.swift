@@ -6,20 +6,19 @@ import Prelude
 
 let router = Router()
 
-router.all { request, response, next in
-
-  let app = toRequest
+router.all { request, response, _ in
+  request
+    |> toRequest
     >>> connection(from:)
-    >>> siteMiddleware
+    >-> siteMiddleware
+    >>> perform
     >>> get(\.response)
     >>> updateResponse(response)
-
-  request |> app
-
-  next()
 }
 
-let port = ProcessInfo.processInfo.environment["PORT"].flatMap(Int.init) ?? 8080
-Kitura.addHTTPServer(onPort: port, with: router)
+Kitura.addHTTPServer(
+  onPort: ProcessInfo.processInfo.environment["PORT"].flatMap(Int.init) ?? 8080,
+  with: router
+)
 
 Kitura.run()
