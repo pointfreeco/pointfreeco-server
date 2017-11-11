@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueCryptor.git",
         "state": {
           "branch": null,
-          "revision": "389bbad82d5a11f6fdbd98bc4407967569787c21",
-          "version": "0.8.17"
+          "revision": "16f9c7ddcbe11bbd32106a791ebef2108a4e9183",
+          "version": "0.8.21"
         }
       },
       {
@@ -69,8 +69,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/Kitura-net.git",
         "state": {
           "branch": null,
-          "revision": "e04ee59e93b72ffb19c730d80dac4e15d060a5da",
-          "version": "1.7.18"
+          "revision": "96c196ef01533f199642e7d39cff51dd50c05faf",
+          "version": "1.7.20"
         }
       },
       {
@@ -87,16 +87,16 @@
         "repositoryURL": "https://github.com/typelift/Operadics.git",
         "state": {
           "branch": null,
-          "revision": "c2a14919b3653a39a9bf268c1ae0bf71ad6833fe",
-          "version": "0.3.0"
+          "revision": "fcacc621d00449c2cc0cb7227756928566370d28",
+          "version": "0.2.2"
         }
       },
       {
         "package": "PointFree",
         "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
         "state": {
-          "branch": "024ea54",
-          "revision": "024ea543459ec77e452851b0278789e86261d0e2",
+          "branch": "e44a195",
+          "revision": "e44a195ff85a44cbd76f1c05a6bdca6f7721bd00",
           "version": null
         }
       },
@@ -114,8 +114,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
         "state": {
           "branch": null,
-          "revision": "40e5da2ce74a50faeebd45e2dcf83972b6718623",
-          "version": "0.12.62"
+          "revision": "7adf7cacc447d447df5dcc3058cabd402177c5aa",
+          "version": "0.12.64"
         }
       },
       {
@@ -132,8 +132,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
         "state": {
           "branch": null,
-          "revision": "badbf15cb8ea1ca6df5458f1472d84f1e070f7a7",
-          "version": "0.12.74"
+          "revision": "00b126a2c19520bbf51cd26e8c0cc41dacbc5a05",
+          "version": "0.12.76"
         }
       },
       {
@@ -141,8 +141,8 @@
         "repositoryURL": "https://github.com/typelift/Swiftx.git",
         "state": {
           "branch": null,
-          "revision": "32cb9a833cbc69b1ee2ebad2392eca3090b7211c",
-          "version": "0.5.3"
+          "revision": "0d481bbe0617c38bb816c9cbbf54ab93edb813b9",
+          "version": "0.5.2"
         }
       },
       {
@@ -158,8 +158,8 @@
         "package": "Web",
         "repositoryURL": "https://github.com/pointfreeco/swift-web.git",
         "state": {
-          "branch": "2497c4c",
-          "revision": "2497c4cee85ddf2c3c1aba8e342e9457e869d9e8",
+          "branch": "74bb176",
+          "revision": "74bb176c80b0aa85c11349047b538ca112c4799f",
           "version": null
         }
       }

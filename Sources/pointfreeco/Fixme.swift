@@ -14,10 +14,8 @@ func updateResponse(_ kituraResponse: RouterResponse) -> (HttpPipeline.Response)
 
     kituraResponse.status(HTTPStatusCode(rawValue: res.status.rawValue)!)
 
-    if let data = res.body {
-      kituraResponse.send(data: data)
-      try? kituraResponse.end()
-    }
+    kituraResponse.send(data: res.body)
+    try? kituraResponse.end()
   }
 }
 
