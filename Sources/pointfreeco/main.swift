@@ -4,6 +4,11 @@ import Kitura
 import PointFree
 import Prelude
 
+_ = try! migrate()
+  .run
+  .perform()
+  .unwrap()
+
 let router = Router()
 
 router.all { request, response, _ in
