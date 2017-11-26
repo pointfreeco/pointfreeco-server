@@ -11,12 +11,30 @@
         }
       },
       {
+        "package": "Bits",
+        "repositoryURL": "https://github.com/vapor/bits.git",
+        "state": {
+          "branch": null,
+          "revision": "c32f5e6ae2007dccd21a92b7e33eba842dd80d2f",
+          "version": "1.1.0"
+        }
+      },
+      {
         "package": "CCurl",
         "repositoryURL": "https://github.com/IBM-Swift/CCurl.git",
         "state": {
           "branch": null,
           "revision": "f481bd86e58787824cc1c1ec1786e03b67831f38",
           "version": "0.4.1"
+        }
+      },
+      {
+        "package": "CPostgreSQL",
+        "repositoryURL": "https://github.com/vapor-community/cpostgresql.git",
+        "state": {
+          "branch": null,
+          "revision": "33f0f94f023ab61ccd0ba2f076dd6a448be853e3",
+          "version": "2.1.0"
         }
       },
       {
@@ -29,12 +47,30 @@
         }
       },
       {
+        "package": "Core",
+        "repositoryURL": "https://github.com/vapor/core.git",
+        "state": {
+          "branch": null,
+          "revision": "b8330808f4f6b69941961afe8ad6b015562f7b7c",
+          "version": "2.1.2"
+        }
+      },
+      {
         "package": "Cryptor",
         "repositoryURL": "https://github.com/IBM-Swift/BlueCryptor.git",
         "state": {
           "branch": null,
           "revision": "16f9c7ddcbe11bbd32106a791ebef2108a4e9183",
           "version": "0.8.21"
+        }
+      },
+      {
+        "package": "Debugging",
+        "repositoryURL": "https://github.com/vapor/debugging.git",
+        "state": {
+          "branch": null,
+          "revision": "49c5e8f0a7cb5456a8f7c72c6cd9f1553e5885a8",
+          "version": "1.1.0"
         }
       },
       {
@@ -83,6 +119,15 @@
         }
       },
       {
+        "package": "Node",
+        "repositoryURL": "https://github.com/vapor/node.git",
+        "state": {
+          "branch": null,
+          "revision": "642f357d08ec5aa335ae2e3c4633c72da7b5a0c4",
+          "version": "2.1.1"
+        }
+      },
+      {
         "package": "Operadics",
         "repositoryURL": "https://github.com/typelift/Operadics.git",
         "state": {
@@ -95,17 +140,26 @@
         "package": "PointFree",
         "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
         "state": {
-          "branch": "e44a195",
-          "revision": "e44a195ff85a44cbd76f1c05a6bdca6f7721bd00",
+          "branch": "d72356f",
+          "revision": "d72356f837c922e8cfc80ed3970da7d208b84db6",
           "version": null
+        }
+      },
+      {
+        "package": "PostgreSQL",
+        "repositoryURL": "https://github.com/vapor/postgresql.git",
+        "state": {
+          "branch": null,
+          "revision": "cfbfa12c148fd2b44e6777d4ed2f57ca597e06e7",
+          "version": "2.1.0"
         }
       },
       {
         "package": "Prelude",
         "repositoryURL": "https://github.com/pointfreeco/swift-prelude.git",
         "state": {
-          "branch": "9161df1",
-          "revision": "9161df16b239ce68896de1f9fbaf9d3a6891ccea",
+          "branch": "338f4b0",
+          "revision": "338f4b0167c92a53001efc65e28f91a12839cc69",
           "version": null
         }
       },
@@ -122,8 +176,8 @@
         "package": "SnapshotTesting",
         "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
         "state": {
-          "branch": "b4081b7",
-          "revision": "b4081b7f14eac7d0540b6cf6a4caf57816d7a8c2",
+          "branch": "d9fdff4",
+          "revision": "d9fdff434cbfd6da822032e482d14ee0300f9f1a",
           "version": null
         }
       },
@@ -158,8 +212,8 @@
         "package": "Web",
         "repositoryURL": "https://github.com/pointfreeco/swift-web.git",
         "state": {
-          "branch": "74bb176",
-          "revision": "74bb176c80b0aa85c11349047b538ca112c4799f",
+          "branch": "7f3f4fc",
+          "revision": "7f3f4fcccc2d1ad306362ba4f5906e51f1195525",
           "version": null
         }
       }
