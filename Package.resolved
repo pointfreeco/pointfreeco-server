@@ -137,6 +137,15 @@
         }
       },
       {
+        "package": "PointFree",
+        "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
+        "state": {
+          "branch": "d72356f",
+          "revision": "d72356f837c922e8cfc80ed3970da7d208b84db6",
+          "version": null
+        }
+      },
+      {
         "package": "PostgreSQL",
         "repositoryURL": "https://github.com/vapor/postgresql.git",
         "state": {
