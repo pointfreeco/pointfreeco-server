@@ -1,5 +1,5 @@
 start:
-	docker-compose up
+	docker-compose up --build
 
 clean:
 	rm -fr .build

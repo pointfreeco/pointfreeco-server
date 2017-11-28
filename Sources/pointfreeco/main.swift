@@ -4,10 +4,17 @@ import Kitura
 import PointFree
 import Prelude
 
-_ = try! migrate()
-  .run
-  .perform()
-  .unwrap()
+func connectToPostgres() throws {
+  do {
+    _ = try migrate()
+      .run
+      .perform()
+      .unwrap()
+  } catch {
+    sleep(1)
+    try connectToPostgres()
+  }
+}
 
 let router = Router()
 
