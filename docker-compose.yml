@@ -4,6 +4,8 @@ services:
     build: .
     depends_on:
       - db
+    environment:
+      DATABASE_URL: postgres://pointfreeco:@db:5432/pointfreeco
     ports:
       - '8080:8080'
 
