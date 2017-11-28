@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/vapor/core.git",
         "state": {
           "branch": null,
-          "revision": "b8330808f4f6b69941961afe8ad6b015562f7b7c",
-          "version": "2.1.2"
+          "revision": "f9f3a585ab0ea5764b46d7a36d9c0d9d508b9c63",
+          "version": "2.2.0"
         }
       },
       {
@@ -140,8 +140,8 @@
         "package": "PointFree",
         "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
         "state": {
-          "branch": "d72356f",
-          "revision": "d72356f837c922e8cfc80ed3970da7d208b84db6",
+          "branch": "52bad3d",
+          "revision": "52bad3dcfd58e294182af99507a328b8687ac940",
           "version": null
         }
       },
@@ -158,8 +158,8 @@
         "package": "Prelude",
         "repositoryURL": "https://github.com/pointfreeco/swift-prelude.git",
         "state": {
-          "branch": "338f4b0",
-          "revision": "338f4b0167c92a53001efc65e28f91a12839cc69",
+          "branch": "df1b68e",
+          "revision": "df1b68e30b184384d5e5221ac3edea364ed0ed78",
           "version": null
         }
       },
@@ -168,16 +168,16 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
         "state": {
           "branch": null,
-          "revision": "7adf7cacc447d447df5dcc3058cabd402177c5aa",
-          "version": "0.12.64"
+          "revision": "7f08ff22d8f50b2c25c2bb969a683cdf279a6af4",
+          "version": "0.12.67"
         }
       },
       {
         "package": "SnapshotTesting",
         "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
         "state": {
-          "branch": "d9fdff4",
-          "revision": "d9fdff434cbfd6da822032e482d14ee0300f9f1a",
+          "branch": "d9e4781",
+          "revision": "d9e4781211e499fa3b82cc1166ec32e7366b5617",
           "version": null
         }
       },
@@ -186,8 +186,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
         "state": {
           "branch": null,
-          "revision": "00b126a2c19520bbf51cd26e8c0cc41dacbc5a05",
-          "version": "0.12.76"
+          "revision": "f33e2d3e6da0b5b286073e7091eefd0ca56ebc63",
+          "version": "0.12.78"
         }
       },
       {
@@ -212,8 +212,8 @@
         "package": "Web",
         "repositoryURL": "https://github.com/pointfreeco/swift-web.git",
         "state": {
-          "branch": "7f3f4fc",
-          "revision": "7f3f4fcccc2d1ad306362ba4f5906e51f1195525",
+          "branch": "c631f9c",
+          "revision": "c631f9c7d07dc1fbc46b6900eaf6acc6c6cc4650",
           "version": null
         }
       }
