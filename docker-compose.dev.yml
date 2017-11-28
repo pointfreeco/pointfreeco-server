@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  db:
+    environment:
+      POSTGRES_USER: pointfreeco
+    image: postgres
+    ports:
+      - '5432:5432'
+    restart: always
