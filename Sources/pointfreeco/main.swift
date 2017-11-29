@@ -7,30 +7,59 @@ import Prelude
 
 // EnvVars
 
+// FIXME: Move to Prelude.
+extension Dictionary: Monoid {
+  public static var empty: Dictionary {
+    return [:]
+  }
+
+  public static func <>(lhs: Dictionary, rhs: Dictionary) -> Dictionary {
+    return lhs.merging(rhs, uniquingKeysWith: { $1 })
+  }
+}
+
 let envFilePath = URL(fileURLWithPath: #file)
   .deletingLastPathComponent()
   .deletingLastPathComponent()
   .deletingLastPathComponent()
   .appendingPathComponent(".env")
 
-let localEnvVarDict = (try? Data(contentsOf: envFilePath))
-  .flatMap { try? JSONDecoder().decode([String: String].self, from: $0) }
+let decoder = JSONDecoder()
+let encoder = JSONEncoder()
+
+let defaultEnvVarDict = (try? encoder.encode(AppEnvironment.current.envVars))
+  .flatMap { try? decoder.decode([String: String].self, from: $0) }
   ?? [:]
 
-let envVarDict = localEnvVarDict.merging(ProcessInfo.processInfo.environment, uniquingKeysWith: { $1 })
+let localEnvVarDict = (try? Data(contentsOf: envFilePath))
+  .flatMap { try? decoder.decode([String: String].self, from: $0) }
+  ?? [:]
+
+let envVarDict = defaultEnvVarDict <> localEnvVarDict <> ProcessInfo.processInfo.environment
 
 let envVars = (try? JSONSerialization.data(withJSONObject: envVarDict))
-  .flatMap { try? JSONDecoder().decode(EnvVars.self, from: $0) }
+  .flatMap { try? decoder.decode(EnvVars.self, from: $0) }
   ?? AppEnvironment.current.envVars
 
 AppEnvironment.push(env: AppEnvironment.current |> \.envVars .~ envVars)
 
 // Database
 
-_ = try! migrate()
-  .run
-  .perform()
-  .unwrap()
+func connectToPostgres() {
+  print("Connecting to PostgreSQL...")
+  do {
+    _ = try migrate()
+      .run
+      .perform()
+      .unwrap()
+  } catch {
+    sleep(1)
+    connectToPostgres()
+  }
+}
+
+connectToPostgres()
+print("Connected!")
 
 // Server
 

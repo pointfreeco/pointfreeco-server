@@ -1,5 +1,5 @@
 start:
-	docker-compose up
+	docker-compose up --build
 
 local-config:
 	heroku config --json -a pointfreeco-local > ./.env

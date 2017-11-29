@@ -2,5 +2,17 @@ version: '2'
 services:
   web:
     build: .
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://pointfreeco:@db:5432/pointfreeco
     ports:
       - '8080:8080'
+
+  db:
+    environment:
+      POSTGRES_USER: pointfreeco
+    image: postgres
+    ports:
+      - '5432:5432'
+    restart: always
