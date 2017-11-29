@@ -9,3 +9,6 @@ production:
 
 staging:
 	heroku container:push web -a pointfreeco-staging
+
+local:
+	heroku container:push web -a pointfreeco-local
