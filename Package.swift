@@ -9,7 +9,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/IBM-Swift/Kitura.git", from: "1.7.0"),
-    .package(url: "https://github.com/pointfreeco/pointfreeco.git", .revision("8fe89f1")),
+    .package(url: "https://github.com/pointfreeco/pointfreeco.git", .revision("f02930d")),
   ],
   targets: [
     .target(

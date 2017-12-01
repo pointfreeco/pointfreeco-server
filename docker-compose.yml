@@ -1,7 +1,9 @@
 version: '2'
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.local
     depends_on:
       - db
     environment:
