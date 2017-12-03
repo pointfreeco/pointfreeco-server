@@ -12,3 +12,6 @@ staging:
 
 local:
 	heroku container:push web -a pointfreeco-local
+
+xcodeproj:
+	swift package generate-xcodeproj
