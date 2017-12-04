@@ -87,8 +87,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/Kitura.git",
         "state": {
           "branch": null,
-          "revision": "e02c756134c5b399cfc45f186bc2c6f1d51032d1",
-          "version": "1.7.9"
+          "revision": "57a46cc4a12b368208c0572eb6172cf3cb95991b",
+          "version": "2.0.2"
         }
       },
       {
@@ -107,6 +107,15 @@
           "branch": null,
           "revision": "96c196ef01533f199642e7d39cff51dd50c05faf",
           "version": "1.7.20"
+        }
+      },
+      {
+        "package": "KituraContracts",
+        "repositoryURL": "https://github.com/IBM-Swift/KituraContracts.git",
+        "state": {
+          "branch": null,
+          "revision": "385c5698b5c6ffb3416f810dd71c317be40076cc",
+          "version": "0.0.15"
         }
       },
       {
@@ -134,15 +143,6 @@
           "branch": null,
           "revision": "fcacc621d00449c2cc0cb7227756928566370d28",
           "version": "0.2.2"
-        }
-      },
-      {
-        "package": "PointFree",
-        "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
-        "state": {
-          "branch": "5b81e8e",
-          "revision": "5b81e8e5da77e6ae196a208368b7dd352244b5e3",
-          "version": null
         }
       },
       {
@@ -197,15 +197,6 @@
           "branch": null,
           "revision": "0d481bbe0617c38bb816c9cbbf54ab93edb813b9",
           "version": "0.5.2"
-        }
-      },
-      {
-        "package": "SwiftyJSON",
-        "repositoryURL": "https://github.com/IBM-Swift/SwiftyJSON.git",
-        "state": {
-          "branch": null,
-          "revision": "1190845cf7d25a5c8ea7653fe03dcdd39a082056",
-          "version": "17.0.0"
         }
       },
       {
