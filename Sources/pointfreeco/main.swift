@@ -46,7 +46,6 @@ AppEnvironment.push(AppEnvironment.current |> \.envVars .~ envVars)
 // Database
 
 func connectToPostgres() {
-  print("Connecting to PostgreSQL...")
   do {
     _ = try AppEnvironment.current.database.migrate()
       .run
@@ -58,6 +57,7 @@ func connectToPostgres() {
   }
 }
 
+print("Connecting to PostgreSQL...")
 connectToPostgres()
 print("Connected!")
 

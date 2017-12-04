@@ -83,6 +83,24 @@
         }
       },
       {
+        "package": "EpisodeModels",
+        "repositoryURL": "https://github.com/pointfreeco/episode-models.git",
+        "state": {
+          "branch": "d3f2ef3",
+          "revision": "d3f2ef31926ba59cb35cad976392dfa0f0cf11c3",
+          "version": null
+        }
+      },
+      {
+        "package": "Episodes",
+        "repositoryURL": "https://github.com/pointfreeco/episodes-oss.git",
+        "state": {
+          "branch": "c2741dd",
+          "revision": "c2741dd749f981e56cb84b638fad4ac8200f945a",
+          "version": null
+        }
+      },
+      {
         "package": "Kitura",
         "repositoryURL": "https://github.com/IBM-Swift/Kitura.git",
         "state": {
@@ -137,21 +155,12 @@
         }
       },
       {
-        "package": "PointFree",
-        "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
-        "state": {
-          "branch": "f02930d",
-          "revision": "f02930ddcd42c38081c55d756f508946e85ea1a8",
-          "version": null
-        }
-      },
-      {
         "package": "PostgreSQL",
         "repositoryURL": "https://github.com/vapor/postgresql.git",
         "state": {
           "branch": null,
-          "revision": "cfbfa12c148fd2b44e6777d4ed2f57ca597e06e7",
-          "version": "2.1.0"
+          "revision": "d57aa99805da230704f924f7680195cfbf869642",
+          "version": "2.1.1"
         }
       },
       {
@@ -212,8 +221,8 @@
         "package": "Web",
         "repositoryURL": "https://github.com/pointfreeco/swift-web.git",
         "state": {
-          "branch": "0bd7749",
-          "revision": "0bd7749e2447cc2c8e91f8149fce4edc1a100efd",
+          "branch": "a253396",
+          "revision": "a253396a24bc47b07447a05f88c0a6a2f99b4fa3",
           "version": null
         }
       }
