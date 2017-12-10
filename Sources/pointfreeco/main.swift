@@ -7,17 +7,6 @@ import Prelude
 
 // EnvVars
 
-// FIXME: Move to Prelude.
-extension Dictionary: Monoid {
-  public static var empty: Dictionary {
-    return [:]
-  }
-
-  public static func <>(lhs: Dictionary, rhs: Dictionary) -> Dictionary {
-    return lhs.merging(rhs, uniquingKeysWith: { $1 })
-  }
-}
-
 let envFilePath = URL(fileURLWithPath: #file)
   .deletingLastPathComponent()
   .deletingLastPathComponent()
@@ -35,7 +24,9 @@ let localEnvVarDict = (try? Data(contentsOf: envFilePath))
   .flatMap { try? decoder.decode([String: String].self, from: $0) }
   ?? [:]
 
-let envVarDict = defaultEnvVarDict <> localEnvVarDict <> ProcessInfo.processInfo.environment
+let envVarDict = defaultEnvVarDict
+  .merging(localEnvVarDict, uniquingKeysWith: { $1 })
+  .merging(ProcessInfo.processInfo.environment, uniquingKeysWith: { $1 })
 
 let envVars = (try? JSONSerialization.data(withJSONObject: envVarDict))
   .flatMap { try? decoder.decode(EnvVars.self, from: $0) }
