@@ -62,7 +62,7 @@ router.all { request, response, _ in
     >>> connection(from:)
     >-> siteMiddleware
     >>> perform
-    >>> get(\.response)
+    >>> ^\.response
     >>> updateResponse(response)
 }
 
