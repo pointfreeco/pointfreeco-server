@@ -32,7 +32,7 @@ let envVars = (try? JSONSerialization.data(withJSONObject: envVarDict))
   .flatMap { try? decoder.decode(EnvVars.self, from: $0) }
   ?? AppEnvironment.current.envVars
 
-AppEnvironment.push(AppEnvironment.current |> \.envVars .~ envVars)
+AppEnvironment.push(\.envVars .~ envVars)
 
 // Database
 
