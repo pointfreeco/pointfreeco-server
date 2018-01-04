@@ -7,7 +7,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://pointfreeco:@db:5432/pointfreeco
+      DATABASE_URL: postgres://pointfreeco:@db:5432/pointfreeco_development
     ports:
       - '8080:8080'
 

@@ -9,11 +9,13 @@ WORKDIR /app
 
 COPY .build/dependencies-state.json ./.build/dependencies-state.json
 COPY .env ./
+COPY Makefile ./
 COPY Package.resolved ./
 COPY Packages ./Packages
 
 COPY Package.swift ./
 RUN swift package update
+RUN make db
 
 COPY Sources ./Sources
 RUN swift build --configuration release

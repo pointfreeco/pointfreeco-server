@@ -15,3 +15,9 @@ local:
 
 xcodeproj:
 	swift package generate-xcodeproj
+	xed .
+
+db:
+	createuser --superuser pointfreeco || true
+	createdb --owner pointfreeco pointfreeco_development || true
+	createdb --owner pointfreeco pointfreeco_test || true
