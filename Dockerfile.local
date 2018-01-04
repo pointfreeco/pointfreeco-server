@@ -15,7 +15,6 @@ COPY Packages ./Packages
 
 COPY Package.swift ./
 RUN swift package update
-RUN make db
 
 COPY Sources ./Sources
 RUN swift build --configuration release
