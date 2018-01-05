@@ -10,7 +10,7 @@ func updateResponse(_ kituraResponse: RouterResponse) -> (HttpPipeline.Response)
   return { res in
     kituraResponse.status(HTTPStatusCode(rawValue: res.status.rawValue)!)
     var headers = kituraResponse.headers
-    res.headers.map(get(\.pair)).forEach { key, value in headers.append(key, value: value) }
+    res.headers.forEach { headers.append($0.name, value: $0.value) }
     kituraResponse.headers = headers
     kituraResponse.send(data: res.body)
 

@@ -42,7 +42,8 @@ func connectToPostgres() {
       .run
       .perform()
       .unwrap()
-  } catch {
+  } catch let error {
+    print(error)
     sleep(1)
     connectToPostgres()
   }
