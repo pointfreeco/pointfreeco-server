@@ -9,7 +9,6 @@ WORKDIR /app
 
 COPY .build/dependencies-state.json ./.build/dependencies-state.json
 COPY .env ./
-COPY Makefile ./
 COPY Package.resolved ./
 COPY Packages ./Packages
 
