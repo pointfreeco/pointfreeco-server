@@ -93,10 +93,10 @@
       },
       {
         "package": "EpisodeTranscripts",
-        "repositoryURL": "https://github.com/pointfreeco/episode-transcripts-oss.git",
+        "repositoryURL": "https://github.com/mbrandonw/episode-transcripts.git",
         "state": {
-          "branch": "2a6472f",
-          "revision": "2a6472f0d7ca9c371e0a26c30bd6274f99d37c8a",
+          "branch": "5d786e7",
+          "revision": "5d786e7de37d2eef32826e4175b0c50b8dcc673a",
           "version": null
         }
       },
@@ -176,8 +176,8 @@
         "package": "PointFree",
         "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
         "state": {
-          "branch": "77e0c0c",
-          "revision": "77e0c0c9525b29ec50cd719f7f48ec581bddcedf",
+          "branch": "79eb4c6",
+          "revision": "79eb4c6991b5ac3429d4725a45fe225aca706f33",
           "version": null
         }
       },
