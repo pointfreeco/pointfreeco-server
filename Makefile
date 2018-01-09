@@ -21,3 +21,9 @@ db:
 	createuser --superuser pointfreeco || true
 	createdb --owner pointfreeco pointfreeco_development || true
 	createdb --owner pointfreeco pointfreeco_test || true
+
+install-cmark:
+	apt-get -y install cmake
+	git clone https://github.com/commonmark/cmark
+	make -C cmark INSTALL_PREFIX=/usr
+	make -C cmark install

@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "Ccmark",
+        "repositoryURL": "https://github.com/pointfreeco/Ccmark.git",
+        "state": {
+          "branch": "master",
+          "revision": "d5a4941c898b65a4c97d6b8565994d6d9de1e08d",
+          "version": null
+        }
+      },
+      {
         "package": "CommonCrypto",
         "repositoryURL": "https://github.com/IBM-Swift/CommonCrypto.git",
         "state": {
@@ -83,6 +92,15 @@
         }
       },
       {
+        "package": "EpisodeTranscripts",
+        "repositoryURL": "https://github.com/pointfreeco/episode-transcripts-oss.git",
+        "state": {
+          "branch": "2a6472f",
+          "revision": "2a6472f0d7ca9c371e0a26c30bd6274f99d37c8a",
+          "version": null
+        }
+      },
+      {
         "package": "FileCheck",
         "repositoryURL": "https://github.com/trill-lang/FileCheck.git",
         "state": {
@@ -123,8 +141,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/KituraContracts.git",
         "state": {
           "branch": null,
-          "revision": "d8b73a53218e52846694a62d3e0fe889cebbbf5d",
-          "version": "0.0.16"
+          "revision": "72b3614a0a73b1e16b50a80fabc78a39e012b601",
+          "version": "0.0.17"
         }
       },
       {
@@ -158,8 +176,8 @@
         "package": "PointFree",
         "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
         "state": {
-          "branch": "f62cfd7",
-          "revision": "f62cfd7b3edfb0eae4d6da464027bb3ce16a86c3",
+          "branch": "77e0c0c",
+          "revision": "77e0c0c9525b29ec50cd719f7f48ec581bddcedf",
           "version": null
         }
       },
@@ -186,8 +204,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
         "state": {
           "branch": null,
-          "revision": "d657234966e61ec3d9e9c2edec2be0c03cae6e99",
-          "version": "0.12.68"
+          "revision": "e414b1cc338eb89d718b68763ca554c7fde6c1f5",
+          "version": "0.12.71"
         }
       },
       {
@@ -204,8 +222,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
         "state": {
           "branch": null,
-          "revision": "ebd0fd8372c73fd467a447f80f2763d34f3dbe9c",
-          "version": "0.12.79"
+          "revision": "8913ba22906c14358519f9a4c8dbc18a0189aeb1",
+          "version": "0.12.82"
         }
       },
       {
@@ -230,8 +248,8 @@
         "package": "Web",
         "repositoryURL": "https://github.com/pointfreeco/swift-web.git",
         "state": {
-          "branch": "54412eb",
-          "revision": "54412ebbf6e900abb8caee8fd62471546ac2fb58",
+          "branch": "35421ef",
+          "revision": "35421ef5f32d707253b62e027cf302204685eb1f",
           "version": null
         }
       }
