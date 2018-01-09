@@ -15,8 +15,6 @@ COPY Makefile ./
 RUN make install-cmark
 
 COPY Package.swift ./
-RUN swift package clean
-RUN swift package reset
 RUN OSS=1 swift package update
 
 COPY Sources ./Sources
