@@ -7,6 +7,9 @@ RUN apt-get install -y postgresql libpq-dev
 
 WORKDIR /app
 
+COPY Makefile ./
+RUN make install-cmark
+
 COPY Package.swift ./
 RUN swift package update
 

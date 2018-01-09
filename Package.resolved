@@ -38,12 +38,12 @@
         }
       },
       {
-        "package": "CZlib",
-        "repositoryURL": "https://github.com/IBM-Swift/CZlib.git",
+        "package": "Ccmark",
+        "repositoryURL": "https://github.com/pointfreeco/Ccmark.git",
         "state": {
-          "branch": null,
-          "revision": "a781e6ef055fb8f0d608fe30a28e6a0f62ae498b",
-          "version": "0.1.2"
+          "branch": "master",
+          "revision": "d5a4941c898b65a4c97d6b8565994d6d9de1e08d",
+          "version": null
         }
       },
       {
@@ -92,6 +92,15 @@
         }
       },
       {
+        "package": "EpisodeTranscripts",
+        "repositoryURL": "https://github.com/mbrandonw/episode-transcripts.git",
+        "state": {
+          "branch": "5d786e7",
+          "revision": "5d786e7de37d2eef32826e4175b0c50b8dcc673a",
+          "version": null
+        }
+      },
+      {
         "package": "FileCheck",
         "repositoryURL": "https://github.com/trill-lang/FileCheck.git",
         "state": {
@@ -105,8 +114,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/Kitura.git",
         "state": {
           "branch": null,
-          "revision": "57a46cc4a12b368208c0572eb6172cf3cb95991b",
-          "version": "2.0.2"
+          "revision": "9673af0daf3d3947675acc9c9d0755476ce4aa5b",
+          "version": "2.1.3"
         }
       },
       {
@@ -123,16 +132,7 @@
         "repositoryURL": "https://github.com/IBM-Swift/Kitura-net.git",
         "state": {
           "branch": null,
-          "revision": "96c196ef01533f199642e7d39cff51dd50c05faf",
-          "version": "1.7.20"
-        }
-      },
-      {
-        "package": "KituraCompression",
-        "repositoryURL": "https://github.com/IBM-Swift/Kitura-Compression",
-        "state": {
-          "branch": null,
-          "revision": "a305db3a4f2762ec3dbabf3fa497eb43d8f6fb74",
+          "revision": "d781655dcee403504e4f1eeaf3f62b12d78d8230",
           "version": "2.0.1"
         }
       },
@@ -141,8 +141,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/KituraContracts.git",
         "state": {
           "branch": null,
-          "revision": "d8b73a53218e52846694a62d3e0fe889cebbbf5d",
-          "version": "0.0.16"
+          "revision": "72b3614a0a73b1e16b50a80fabc78a39e012b601",
+          "version": "0.0.17"
         }
       },
       {
@@ -176,8 +176,8 @@
         "package": "PointFree",
         "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
         "state": {
-          "branch": "f62cfd7",
-          "revision": "f62cfd7b3edfb0eae4d6da464027bb3ce16a86c3",
+          "branch": "79eb4c6",
+          "revision": "79eb4c6991b5ac3429d4725a45fe225aca706f33",
           "version": null
         }
       },
@@ -248,8 +248,8 @@
         "package": "Web",
         "repositoryURL": "https://github.com/pointfreeco/swift-web.git",
         "state": {
-          "branch": "54412eb",
-          "revision": "54412ebbf6e900abb8caee8fd62471546ac2fb58",
+          "branch": "35421ef",
+          "revision": "35421ef5f32d707253b62e027cf302204685eb1f",
           "version": null
         }
       }

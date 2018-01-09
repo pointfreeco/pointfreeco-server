@@ -1,7 +1,6 @@
 import Foundation
 import HttpPipeline
 import Kitura
-import KituraCompression
 import Optics
 import PointFree
 import Prelude
@@ -57,8 +56,6 @@ print("Connected!")
 // Server
 
 let router = Router()
-
-router.all(middleware: Compression())
 
 router.all { request, response, _ in
   request
