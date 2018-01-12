@@ -2,7 +2,7 @@ import Foundation
 import HttpPipeline
 import Kitura
 import Optics
-import PointFree
+@testable import PointFree
 import Prelude
 
 // EnvVars
@@ -34,24 +34,11 @@ let envVars = (try? JSONSerialization.data(withJSONObject: envVarDict))
 
 AppEnvironment.push(\.envVars .~ envVars)
 
-// Database
-
-func connectToPostgres() {
-  do {
-    _ = try AppEnvironment.current.database.migrate()
-      .run
-      .perform()
-      .unwrap()
-  } catch let error {
-    print(error)
-    sleep(1)
-    connectToPostgres()
-  }
-}
-
-print("Connecting to PostgreSQL...")
-connectToPostgres()
-print("Connected!")
+_ = try! PointFree
+  .bootstrap()
+  .run
+  .perform()
+  .unwrap()
 
 // Server
 
