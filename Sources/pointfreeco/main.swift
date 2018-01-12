@@ -2,7 +2,7 @@ import Foundation
 import HttpPipeline
 import Kitura
 import Optics
-@testable import PointFree
+import PointFree
 import Prelude
 
 // EnvVars
