@@ -6,7 +6,7 @@ start:
 transcripts:
 	git submodule update --init --recursive
 	ln -fn Transcripts/*.swift Sources/pointfreeco/Transcripts
-	git update-index --skip-worktree Sources/pointfreeco/Transcripts/
+	git update-index --assume-unchanged Sources/pointfreeco/Transcripts/
 	make xcodeproj
 
 local-config:
