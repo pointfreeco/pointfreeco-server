@@ -9,6 +9,10 @@ transcripts:
 	git update-index --assume-unchanged Sources/pointfreeco/Transcripts/
 	make xcodeproj
 
+untranscripts:
+	git update-index --no-assume-unchanged Sources/pointfreeco/Transcripts/
+	make xcodeproj
+
 local-config:
 	heroku config --json -a pointfreeco-local > ./.env
 
