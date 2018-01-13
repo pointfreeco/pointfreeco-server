@@ -38,24 +38,13 @@ AppEnvironment.push(\.envVars .~ envVars)
 
 AppEnvironment.push(\.episodes .~ allEpisodes)
 
-// Database
+// Bootstrap
 
-func connectToPostgres() {
-  do {
-    _ = try AppEnvironment.current.database.migrate()
-      .run
-      .perform()
-      .unwrap()
-  } catch let error {
-    print(error)
-    sleep(1)
-    connectToPostgres()
-  }
-}
-
-print("Connecting to PostgreSQL...")
-connectToPostgres()
-print("Connected!")
+_ = try! PointFree
+  .bootstrap()
+  .run
+  .perform()
+  .unwrap()
 
 // Server
 
