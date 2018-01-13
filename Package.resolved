@@ -92,15 +92,6 @@
         }
       },
       {
-        "package": "EpisodeTranscripts",
-        "repositoryURL": "https://github.com/mbrandonw/episode-transcripts.git",
-        "state": {
-          "branch": "5d786e7",
-          "revision": "5d786e7de37d2eef32826e4175b0c50b8dcc673a",
-          "version": null
-        }
-      },
-      {
         "package": "FileCheck",
         "repositoryURL": "https://github.com/trill-lang/FileCheck.git",
         "state": {
@@ -141,8 +132,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/KituraContracts.git",
         "state": {
           "branch": null,
-          "revision": "72b3614a0a73b1e16b50a80fabc78a39e012b601",
-          "version": "0.0.17"
+          "revision": "4195ce3e6748420ff5c659d5ebba7b5dd4434df0",
+          "version": "0.0.18"
         }
       },
       {
@@ -173,15 +164,6 @@
         }
       },
       {
-        "package": "PointFree",
-        "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
-        "state": {
-          "branch": "79eb4c6",
-          "revision": "79eb4c6991b5ac3429d4725a45fe225aca706f33",
-          "version": null
-        }
-      },
-      {
         "package": "PostgreSQL",
         "repositoryURL": "https://github.com/vapor/postgresql.git",
         "state": {
@@ -204,8 +186,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
         "state": {
           "branch": null,
-          "revision": "e414b1cc338eb89d718b68763ca554c7fde6c1f5",
-          "version": "0.12.71"
+          "revision": "079db682acd37610273788bd8e81453b572ee4f0",
+          "version": "0.12.72"
         }
       },
       {

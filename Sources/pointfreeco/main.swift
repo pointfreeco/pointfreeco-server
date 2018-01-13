@@ -34,6 +34,10 @@ let envVars = (try? JSONSerialization.data(withJSONObject: envVarDict))
 
 AppEnvironment.push(\.envVars .~ envVars)
 
+// Transcripts
+
+AppEnvironment.push(\.episodes .~ allEpisodes)
+
 // Database
 
 func connectToPostgres() {

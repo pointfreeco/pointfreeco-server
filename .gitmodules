@@ -1,0 +1,3 @@
+[submodule "Transcripts"]
+	path = Transcripts
+	url = git@github.com:mbrandonw/episode-transcripts.git
