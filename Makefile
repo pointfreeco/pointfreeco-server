@@ -5,12 +5,15 @@ start:
 
 transcripts:
 	git submodule update --init --recursive
-	ln -fn Transcripts/*.swift Sources/pointfreeco/Transcripts
-	git update-index --assume-unchanged Sources/pointfreeco/Transcripts/
+	ln -fn Transcripts/*.swift Sources/pointfreeco/Transcripts/
+	git update-index --assume-unchanged Sources/pointfreeco/Transcripts/AllEpisodes.swift
+	echo Sources/pointfreeco/Transcripts/ > .git/info/exclude
 	make xcodeproj
 
 untranscripts:
-	git update-index --no-assume-unchanged Sources/pointfreeco/Transcripts/
+	echo > .git/info/exclude
+	git update-index --no-assume-unchanged Sources/pointfreeco/Transcripts/AllEpisodes.swift
+	git clean --force Sources/pointfreeco/Transcripts/
 	make xcodeproj
 
 local-config:
