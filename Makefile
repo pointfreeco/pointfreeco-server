@@ -13,7 +13,7 @@ transcripts:
 untranscripts:
 	echo > .git/info/exclude
 	git update-index --no-assume-unchanged Sources/pointfreeco/Transcripts/AllEpisodes.swift
-	git co -- Sources/pointfreeco/Transcripts/
+	git checkout -- Sources/pointfreeco/Transcripts/
 	git clean --force Sources/pointfreeco/Transcripts/
 	make xcodeproj
 
