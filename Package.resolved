@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "CZlib",
+        "repositoryURL": "https://github.com/IBM-Swift/CZlib.git",
+        "state": {
+          "branch": null,
+          "revision": "a781e6ef055fb8f0d608fe30a28e6a0f62ae498b",
+          "version": "0.1.2"
+        }
+      },
+      {
         "package": "Ccmark",
         "repositoryURL": "https://github.com/pointfreeco/Ccmark.git",
         "state": {
@@ -128,6 +137,15 @@
         }
       },
       {
+        "package": "KituraCompression",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-Compression",
+        "state": {
+          "branch": null,
+          "revision": "17e5d41172dd20e0236d202f58c9e6aceaf3b702",
+          "version": "2.1.0"
+        }
+      },
+      {
         "package": "KituraContracts",
         "repositoryURL": "https://github.com/IBM-Swift/KituraContracts.git",
         "state": {
@@ -165,7 +183,7 @@
       },
       {
         "package": "PostgreSQL",
-        "repositoryURL": "https://github.com/vapor/postgresql.git",
+        "repositoryURL": "https://github.com/vapor-community/postgresql.git",
         "state": {
           "branch": null,
           "revision": "d57aa99805da230704f924f7680195cfbf869642",
@@ -186,8 +204,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
         "state": {
           "branch": null,
-          "revision": "079db682acd37610273788bd8e81453b572ee4f0",
-          "version": "0.12.72"
+          "revision": "18ed96d20615d3de25874ab141bde55c0e5bc3ec",
+          "version": "0.12.73"
         }
       },
       {
@@ -204,8 +222,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
         "state": {
           "branch": null,
-          "revision": "8913ba22906c14358519f9a4c8dbc18a0189aeb1",
-          "version": "0.12.82"
+          "revision": "15ad09461f19a993fe5efb0e42b323adafc3533d",
+          "version": "0.12.83"
         }
       },
       {

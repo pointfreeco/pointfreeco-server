@@ -9,13 +9,15 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/IBM-Swift/Kitura.git", from: "2.1.0"),
-    .package(url: "https://github.com/pointfreeco/pointfreeco.git", .revision("79eb4c6")),
+    .package(url: "https://github.com/pointfreeco/pointfreeco.git", .revision("b0bce01")),
+    .package(url: "https://github.com/IBM-Swift/Kitura-Compression", from: "2.1.0"),
   ],
   targets: [
     .target(
       name: "pointfreeco",
       dependencies: [
-        .product(name: "Kitura"),
+        "Kitura",
+        "KituraCompression",
         "PointFree",
       ]
     ),
