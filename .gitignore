@@ -70,3 +70,4 @@ fastlane/test_output
 Packages/*
 *.xcodeproj/*
 .env
+Sources/pointfreeco/Transcripts
