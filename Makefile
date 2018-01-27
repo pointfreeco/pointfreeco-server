@@ -1,21 +1,10 @@
+oss:
+	cp -r Transcripts.example Sources/pointfreeco/Transcripts
+
 start:
 	test -f .env || make local-config
 	test -d Packages || swift package edit PointFree
 	docker-compose up --build
-
-transcripts:
-	git submodule update --init --recursive
-	ln -fn Transcripts/*.swift Sources/pointfreeco/Transcripts/
-	git update-index --assume-unchanged Sources/pointfreeco/Transcripts/AllEpisodes.swift
-	echo Sources/pointfreeco/Transcripts/ > .git/info/exclude
-	make xcodeproj
-
-untranscripts:
-	echo > .git/info/exclude
-	git update-index --no-assume-unchanged Sources/pointfreeco/Transcripts/AllEpisodes.swift
-	git checkout -- Sources/pointfreeco/Transcripts/
-	git clean --force Sources/pointfreeco/Transcripts/
-	make xcodeproj
 
 local-config:
 	heroku config --json -a pointfreeco-local > ./.env
