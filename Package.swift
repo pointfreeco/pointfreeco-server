@@ -8,9 +8,9 @@ let package = Package(
     .executable(name: "pointfreeco", targets: ["pointfreeco"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/IBM-Swift/Kitura.git", from: "2.1.0"),
-    .package(url: "https://github.com/IBM-Swift/Kitura-Compression", from: "2.1.0"),
-    .package(url: "https://github.com/pointfreeco/pointfreeco.git", .revision("cc37ba8")),
+    .package(url: "https://github.com/IBM-Swift/Kitura.git", .exact("2.1.0")),
+    .package(url: "https://github.com/IBM-Swift/Kitura-Compression", .exact("2.1.0")),
+    .package(url: "https://github.com/pointfreeco/pointfreeco.git", .revision("2db61bd")),
   ],
   targets: [
     .target(
