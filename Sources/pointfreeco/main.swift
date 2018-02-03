@@ -47,6 +47,20 @@ _ = try! PointFree
   .perform()
   .unwrap()
 
+// Local SSL
+
+let sslCert = URL(string: #file)!
+  .deletingLastPathComponent()
+  .deletingLastPathComponent()
+  .appendingPathComponent(".ssl/cert.p12")
+  .absoluteString
+
+let sslConfig =
+  FileManager.default.fileExists(atPath: sslCert)
+    && AppEnvironment.current.envVars.useSsl
+    ? SSLConfig(withChainFilePath: sslCert, withPassword: "helloworld", usingSelfSignedCerts: true)
+    : nil
+
 // Server
 
 let router = Router()
@@ -65,7 +79,8 @@ router.all { request, response, _ in
 
 Kitura.addHTTPServer(
   onPort: ProcessInfo.processInfo.environment["PORT"].flatMap(Int.init) ?? 8080,
-  with: router
+  with: router,
+  withSSL: sslConfig
 )
 
 Kitura.run()
