@@ -55,11 +55,14 @@ let sslCert = URL(string: #file)!
   .appendingPathComponent(".ssl/cert.p12")
   .absoluteString
 
-let sslConfig =
-  FileManager.default.fileExists(atPath: sslCert)
-    && AppEnvironment.current.envVars.useSsl
-    ? SSLConfig(withChainFilePath: sslCert, withPassword: "helloworld", usingSelfSignedCerts: true)
-    : nil
+let sslConfig: SSLConfig?
+if FileManager.default.fileExists(atPath: sslCert) && AppEnvironment.current.envVars.useSsl {
+  sslConfig = SSLConfig(withChainFilePath: sslCert, withPassword: "helloworld", usingSelfSignedCerts: true)
+  print("✅ SSL Enabled")
+} else {
+  sslConfig = nil
+  print("☑️ SSL Disabled")
+}
 
 // Server
 
@@ -77,10 +80,13 @@ router.all { request, response, _ in
     >>> updateResponse(response)
 }
 
+let port = ProcessInfo.processInfo.environment["PORT"].flatMap(Int.init) ?? 8080
 Kitura.addHTTPServer(
-  onPort: ProcessInfo.processInfo.environment["PORT"].flatMap(Int.init) ?? 8080,
+  onPort: port,
   with: router,
   withSSL: sslConfig
 )
+
+print("✅ Point-Free running at http\(sslConfig == nil ? "" : "s")://localhost:\(port)")
 
 Kitura.run()

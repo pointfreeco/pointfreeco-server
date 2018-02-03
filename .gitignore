@@ -72,3 +72,4 @@ Packages/*
 .env
 Sources/pointfreeco/Transcripts
 .ssl/*
+bin/*
