@@ -182,15 +182,6 @@
         }
       },
       {
-        "package": "PointFree",
-        "repositoryURL": "https://github.com/pointfreeco/pointfreeco.git",
-        "state": {
-          "branch": "2db61bd",
-          "revision": "2db61bd640f37aee46bed7c885cfb9ffc74634c5",
-          "version": null
-        }
-      },
-      {
         "package": "PostgreSQL",
         "repositoryURL": "https://github.com/vapor-community/postgresql.git",
         "state": {
@@ -213,8 +204,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
         "state": {
           "branch": null,
-          "revision": "fde8b10d1dc727da90a8ae39611498211a64b890",
-          "version": "0.12.77"
+          "revision": "05ece03dcfc6683ff05c9db446948793fc5dd68e",
+          "version": "0.12.80"
         }
       },
       {
@@ -231,8 +222,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
         "state": {
           "branch": null,
-          "revision": "0d2663bf81ae2588b61b358fe4a25d6f0dc4d8af",
-          "version": "0.12.87"
+          "revision": "fbd08641c8689626a65d7eb0e826085cf4c54788",
+          "version": "0.12.90"
         }
       },
       {
