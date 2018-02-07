@@ -35,6 +35,9 @@ start:
 		|| swift package edit PointFree
 	docker-compose up --build
 
+example-config:
+	cp .env.example .env
+
 local-config:
 	heroku config --json -a pointfreeco-local > ./.env
 

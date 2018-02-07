@@ -17,12 +17,13 @@ let envFilePath = URL(fileURLWithPath: #file)
 let decoder = JSONDecoder()
 let encoder = JSONEncoder()
 
-let defaultEnvVarDict = (try? encoder.encode(AppEnvironment.current.envVars))
+let defaultEnvVarDict: [String: Any] = (try? encoder.encode(AppEnvironment.current.envVars))
   .flatMap { try? decoder.decode([String: String].self, from: $0) }
   ?? [:]
 
 let localEnvVarDict = (try? Data(contentsOf: envFilePath))
-  .flatMap { try? decoder.decode([String: String].self, from: $0) }
+  .flatMap { try? JSONSerialization.jsonObject(with: $0) }
+  .flatMap { $0 as? [String: Any] }
   ?? [:]
 
 let envVarDict = defaultEnvVarDict
@@ -52,11 +53,12 @@ _ = try! PointFree
 let sslCert = URL(string: #file)!
   .deletingLastPathComponent()
   .deletingLastPathComponent()
+  .deletingLastPathComponent()
   .appendingPathComponent(".ssl/cert.p12")
   .absoluteString
 
 let sslConfig: SSLConfig?
-if FileManager.default.fileExists(atPath: sslCert) && AppEnvironment.current.envVars.useSsl {
+if false && FileManager.default.fileExists(atPath: sslCert) {
   sslConfig = SSLConfig(withChainFilePath: sslCert, withPassword: "helloworld", usingSelfSignedCerts: true)
   print("✅ SSL Enabled")
 } else {
