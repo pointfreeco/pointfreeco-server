@@ -71,3 +71,5 @@ Packages/*
 *.xcodeproj/*
 .env
 Sources/pointfreeco/Transcripts
+.ssl/*
+bin/*
