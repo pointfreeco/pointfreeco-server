@@ -10,7 +10,7 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/IBM-Swift/Kitura.git", .exact("2.1.0")),
     .package(url: "https://github.com/IBM-Swift/Kitura-Compression", .exact("2.1.0")),
-    .package(url: "https://github.com/pointfreeco/pointfreeco.git", .revision("f970f51")),
+    .package(url: "https://github.com/pointfreeco/pointfreeco.git", .revision("5200baf")),
   ],
   targets: [
     .target(
